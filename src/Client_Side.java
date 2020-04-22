@@ -1,6 +1,8 @@
 import java.io.*;
 import java.net.*;
 
+//The purpose of this class is to perform specific client actions
+//by communicating through a central server
 public class Client_Side 
 {
 	private Socket socket = null;
@@ -48,6 +50,7 @@ public class Client_Side
 	
 	public static void main (String[] args) 
 	{
-		Client_Side client = new Client_Side("Enter Your IP HERE", 12345);
+		Client_Side client = new Client_Side("ENTER YOUR IP", 1234);
+		client.registerDevice("Main PC");
 	}
 }
